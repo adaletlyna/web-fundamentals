@@ -1,0 +1,37 @@
+ button{cursor: pointer;}
+    #search{
+    background-color: rgb(243, 238, 238);
+    border-radius:30px;/*the same as the height*/
+    border-style: ridge;
+    border-width: 2px;
+    border-color: rgb(54, 181, 212);
+    width: 120px;
+    height:30px;
+    margin-top: 50px;
+    margin-left: 50px;
+    font-weight: bolder;
+    color: rgb(44, 170, 179);
+
+}
+#add{
+    width: 40px; /*width=height  radius=50%*/
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(64, 206, 170);
+    color: white;
+    font-size:25px;
+    border-style: none;
+    margin: 20px 50px;
+    
+
+}
+#create-account{
+    background-color: rgb(13, 60, 148);
+    color: white;
+    font-size: 15px;
+    width: 160px;
+    height: 35px;
+    margin-left: 50px;
+    border-style: solid;
+    box-shadow: 2px 3px black;/*2px to the right 4px below the box*/
+}
