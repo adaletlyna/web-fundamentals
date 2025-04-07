@@ -1,0 +1,44 @@
+ *{
+    margin: 0;
+    padding: 0;
+ }
+ .nav{
+    background-color: rgba(0, 0, 0, 0.842);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+    
+
+}
+h1.nav-title{
+    color: white;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    font-weight: lighter;
+}
+ul.nav-links{
+    display: flex;
+    gap: 10px;
+    
+    
+}
+ul.nav-links li a{
+    color: white;
+    text-decoration: none;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ul.nav-links li{
+    list-style-type: none;
+}
+button.btn{
+    background-color: rgb(7, 99, 219);
+    color: white;
+    padding: 5px;
+    box-shadow: 3px 3px black;
+    
+}
+a.active{
+    font-weight: bold;
+}
