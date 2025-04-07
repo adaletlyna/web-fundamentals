@@ -1,0 +1,30 @@
+img.octocat{
+    height: 200px;
+    width: 300px;
+}
+#first{
+    background-color: aqua;
+    
+    
+}
+#second{
+    background-color: rgb(158, 72, 158);
+    
+}
+#third{
+    background-color: burlywood;
+    
+}
+.container div{
+    display: flex;
+    justify-content:space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 10px;/*keep space between imgs when wrapping*/
+}
+h1{
+    text-align: center;
+    color: rgb(23, 23, 70);
+    font-size: 100px;
+    font-style: italic;
+}
