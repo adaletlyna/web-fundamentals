@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.card{
+    height: 300px;
+    width: 500px;
+    margin-top: 50px;
+    margin-left: 100px;
+    
+    border-style: solid;
+    border-color: grey;
+}
+#user_img{
+    width: 70px;
+    height: 70px;
+    position: relative;
+    top: 37px;
+    left:20px;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: white;
+    
+    
+    
+    
+}
+#map_icon{
+    height: 15px;
+    width: 10px;
+}
+#gear_icon{
+    height: 20px;
+    width: 20px;
+
+}
+.top_bar{
+    background-color: rgb(26, 26, 95);
+    
+}
+h1{
+    margin-top: 30px;
+    font-size: 30px;
+    
+}
+.user_details{
+    padding-left: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic; 
+}
+#edit{
+    color: rgb(6, 102, 247);
+    text-decoration: underline;
+    
+}
