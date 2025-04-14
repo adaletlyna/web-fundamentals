@@ -5,23 +5,39 @@
 
 }
 .card{
-    height: 300px;
+    height: 280px;
     width: 500px;
-    margin-top: 50px;
-    margin-left: 100px;
+    margin: 10px auto;
+   
     
-    border-style: solid;
-    border-color: grey;
+    
+    
+    
 }
 #user_img{
     width: 70px;
     height: 70px;
-    position: relative;
-    top: 37px;
+    position: absolute;     /*The image is removed from the normal document flow.
+
+                            It does not take up space in the layout.
+    
+                            It becomes independent and is positioned relative to the nearest positioned ancestor (i.e., the closest parent with position: relative, absolute, or fixed).
+    
+                            The container <div> (top bar) will collapse.
+    
+                            If it has no height or content, it will appear invisible (height = 0).
+    
+                            Even though the image is visually there, it won’t stretch the parent div.     so we have to assign a height for top_bar*/
+    top: 30px;
     left:20px;
+    margin: 0;
+    padding:4px ; 
+    background-color: whitesmoke; /*important*/
+    
+    
     border-style: solid;
     border-radius: 50%;
-    border-color: white;
+    border-color: grey;
     
     
     
@@ -38,20 +54,52 @@
 }
 .top_bar{
     background-color: rgb(26, 26, 95);
+    height: 70px;
+    position: relative;
+    top: 0;
+    left: 0;
+    
     
 }
 h1{
-    margin-top: 30px;
+    margin-top: 30px;/*this is the space btween the edge of userdetails div and h1 +1px padding  */
     font-size: 30px;
     
 }
 .user_details{
+    padding-top: 1px; /* Margin collapsing happens when the top margin of the first child element "collapses" and gets applied outside of its parent — instead of pushing down from inside That’s why .user_details seems to start below the image — because h1's margin is affecting the spacing above .user_details, even though it's inside it.
+
+You can fix or prevent margin collapsing with one of these techniques:
+
+✅ 1. Add Padding or Border to the Container ✅ 2. Use overflow: hidden ✅ 3. Use Flex or Grid Layout
+If you make .user_details a flex container:
+.user_details {
+  display: flex;
+  flex-direction: column;
+}
+It also prevents margin collapse because flexbox changes the block layout behavior.    */
     padding-left: 20px;
+    padding-bottom: 20px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: italic; 
+    border-color: grey;
+    border-style: solid;
+    border-top-style:none; /*but since here we do not want a border-top we cannot use the border method*/
+
+    
+    
 }
 #edit{
     color: rgb(6, 102, 247);
     text-decoration: underline;
     
+}
+.map{
+    display: flex;
+    gap: 5px;
+}
+.edit a{
+    display: flex;
+    gap:5px;
+
 }
