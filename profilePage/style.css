@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ .nav{
+    background-color: rgba(0, 0, 0, 0.842);
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+    
+    
+
+}
+.container{
+    background-color: rgba(204, 202, 202, 0.397);
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    
+    width: 700px;
+    height: 700px;
+    margin: 20px auto;
+    font-style: italic;
+    font-family:Arial, Helvetica, sans-serif
+}
+h1.nav-title{
+    color: white;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    font-weight: lighter;
+}
+ul.nav-links{
+    display: flex;
+    gap: 10px;
+    
+    
+}
+ul.nav-links li a{
+    color: white;
+    text-decoration: none;
+    font-style: italic;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+ul.nav-links li{
+    list-style-type: none;
+}
+button.btn{
+    background-color: rgb(7, 99, 219);
+    color: white;
+    padding: 5px;
+    box-shadow: 3px 3px black;
+    
+}
+a.active{
+    font-weight: bold;
+}
+.card{
+    height: px;
+    width: 360px;
+    
+      
+}
+.education{
+    width: 360px;
+}
+#user_img{
+    width: 70px;
+    height: 70px;
+    position: absolute; 
+    
+    top: 30px;
+    left:20px;
+    margin: 0;
+    padding:4px ; 
+    background-color: whitesmoke; /*important*/
+    
+    
+    border-style: solid;
+    border-radius: 50%;
+    border-color: grey;
+    
+    
+    
+    
+}
+#map_icon{
+    height: 15px;
+    width: 10px;
+}
+#gear_icon{
+    height: 20px;
+    width: 20px;
+
+}
+.top_bar{
+    background-color: rgb(26, 26, 95);
+    height: 70px;
+    position: relative;  
+    top: 0;
+    left: 0;
+    
+    
+}
+h1{
+    margin-top: 30px;
+    font-size: 30px;
+    
+}
+.user_details{
+    padding-top: 1px;  
+
+
+    padding-left: 20px;
+    padding-bottom: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic; 
+    border-color: grey;
+    border-style: solid;
+    border-top-style:none; 
+
+    
+    
+}
+#edit{
+    color: rgb(6, 102, 247);
+    text-decoration: underline;
+    
+}
+.map{
+    display: flex;
+    gap: 5px;
+}
+.edit a{
+    display: flex;
+    gap:5px;
+
+}
+
+    
+.flex>div{
+    margin-bottom:30px ;
+    
+    
+    
+}
+.content{
+    border-style: solid;
+    border-color: grey;
+    border-top-style:none ;
+    padding: 10px;
+}
+#img{
+    width: 30px;
+    height: 30px;/*in fact it does not change anything*/
+    margin-right: 5px;
+    
+}
+.request{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    
+    
+}
+.request div{
+    display: flex;
+}
+.connection{
+    display: flex;
+    margin-bottom: 10px;
+    
+}
+.view-more{
+    border: solid grey;
+    border-top: none;
+    
+    padding: 10px;
+}
+#date{
+    font-size: smaller;
+    color: grey;
+
+}
+.header{
+    background-color: rgb(65, 64, 64);
+    color: white;
+    font-size: 20pxpx;
+    padding: 10px; 
+    
+    display: flex;
+    align-items: center;/*important without it they will be aligned based on their baseline=>it makes their middle lines lines up instead*/
+    gap: 5px;
+    
+}
+#requests-nbr{
+    background-color: grey;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    
+}
