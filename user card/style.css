@@ -17,7 +17,8 @@
 #user_img{
     width: 70px;
     height: 70px;
-    position: absolute;     /*The image is removed from the normal document flow.
+    position: absolute; /*even if it is relative it wil not push the userdetails div down*/
+                           /*The image is removed from the normal document flow.
 
                             It does not take up space in the layout.
     
@@ -55,7 +56,7 @@
 .top_bar{
     background-color: rgb(26, 26, 95);
     height: 70px;
-    position: relative;
+    position: relative;  
     top: 0;
     left: 0;
     
@@ -99,7 +100,10 @@ It also prevents margin collapse because flexbox changes the block layout behavi
     gap: 5px;
 }
 .edit a{
+    background-color: blueviolet;
     display: flex;
+    align-items: flex-end;
+
     gap:5px;
 
 }
