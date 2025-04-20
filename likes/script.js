@@ -7,9 +7,16 @@ var spans=[document.querySelector("#post1"),
 
 
 function like(id){
-    spans[id].textContent=nbrOfLikes[id] + 1;
+   /* nbrOfLikes[id]++;*/
+    spans[id].textContent=nbrOfLikes[id] +1;
     
 
     
 
 }
+/*var nbr=document.querySelector("#post1");
+function like(){
+     
+    nbr.textContent=+nbr.textContent + 1
+
+}*/
