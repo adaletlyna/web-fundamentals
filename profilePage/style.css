@@ -152,20 +152,20 @@ h1{
     border-top-style:none ;
     padding: 10px;
 }
-#img{
+.img, .accept, .close{
     width: 30px;
     height: 30px;/*in fact it does not change anything*/
     margin-right: 5px;
     
 }
-.request{
+.request1, .request2{
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
     
     
 }
-.request div{
+.request1 div, .request2 div{
     display: flex;
 }
 .connection{

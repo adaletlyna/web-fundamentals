@@ -27,12 +27,12 @@
                     <img id="user_img" src= "assets\user-circle.png" alt="">
                 </div>
                 <div class="user_details">
-                <h1>Jane Doe</h1> <br>
+                <h1 id="profile-name">Jane Doe</h1> <br>
                 
                   <div class="map"> <img id="map_icon"   src="assets\map-marker.png" alt=""> Seattle </div> 
                     Developer| Engineer | Problem Solver <br>
                     Master of shadows and the Internet <br><br>
-                  <div class="edit"><a href="#"><img   id="gear_icon"  src="assets\gear.png" alt=""> <span id="edit">edit profile</span></a></div>   
+                  <div class="edit"><a href="#" onclick="changeProfileName()"><img   id="gear_icon"  src="assets\gear.png" alt=""> <span id="edit">edit profile</span></a></div>   
                 
                 </div>
             </div>
@@ -55,18 +55,18 @@
             <div class="connection-requests">
                 <div class="header"><span id=requests-nbr>2</span>Connection Requests</div> 
                 <div class="content">
-                    <div class="request">  <div><img id="img" src="assets\user-circle.png" alt="">Todd E</div> <div class="accept-close"><img id="img" src="assets\accept-circle.png" alt=""> <img id="img" src="assets\close-circle.png" alt=""></div> </div>
-                    <div class="request">  <div><img id="img" src="assets\user-circle.png" alt="">Phil K  </div><div class="accept-close"><img id="img" src ="assets\accept-circle.png" alt=""> <img id="img" src="assets\close-circle.png" alt=""></div></div>
+                    <div class="request1">  <div><img class="img" src="assets\user-circle.png" alt="">Todd E</div> <div class="accept-close"><img class="accept" src="assets\accept-circle.png" alt="" onclick="Request(0)"> <img class="close" src="assets\close-circle.png" alt="" onclick="removeRequest(0)"></div> </div>
+                    <div class="request2">  <div><img class="img" src="assets\user-circle.png" alt="">Phil K  </div><div class="accept-close"><img class="accept" src ="assets\accept-circle.png" alt="" onclick="Request(1)"> <img class="close" src="assets\close-circle.png" alt="" onclick="removeRequest(1)"></div></div>
                 </div>
             </div> 
             
             <div class="your-connections">
                  <div class="header">Your Connections</div>
                 <div class="content">
-                    <div class="connection"> <img id="img" src="assets\user-circle.png" alt="">Adrien  </div>
-                    <div class="connection"> <img id="img" src="assets\user-circle.png" alt="">Anne J</div>
-                    <div class="connection"><img id="img" src="assets\user-circle.png" alt="">Alayne T </div>
-                    <div class="connection"><img id="img" src="assets\user-circle.png" alt="">Arry Y</div>
+                    <div class="connection"> <img class="img" src="assets\user-circle.png" alt="">Adrien  </div>
+                    <div class="connection"> <img class="img" src="assets\user-circle.png" alt="">Anne J</div>
+                    <div class="connection"><img class="img" src="assets\user-circle.png" alt="">Alayne T </div>
+                    <div class="connection"><img class="img" src="assets\user-circle.png" alt="">Arry Y</div>
                 </div>
                     <div class="view-more"> <a href="#">View More</a></div>
                 
@@ -77,6 +77,6 @@
     </div>
 
         
-    
+   <script src="script.js"></script> 
 </body>
 </html>
