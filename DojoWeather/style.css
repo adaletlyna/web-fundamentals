@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}/*header*/
+.pageHeader{
+    background-color: rgb(102, 102, 245);
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.pageHeader h1{
+    color: white;
+    font-size: 40px;
+}
+nav ul{
+   /* background-color: rgb(5, 114, 114);*/
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 240px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+}
+     /*main*/
+main{
+   /* background-color: grey;*/
+    padding: 5px;
+    margin: 0 auto;
+    width: 80%;
+
+}
+/*header*/
+.mainHeader{
+   /* background-color: aqua;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+    border-bottom: solid 2px black;
+}
+.mainHeader h2{
+    font-size: 35px;
+}
+select{
+    width: 40px;
+    height: 35px;
+}
+
+label{
+    font-size: 18px;
+    font-weight: 2em;
+}
+/*articles container*/
+.flexContainer{
+    display: flex; 
+    gap: 12px;
+    
+
+}
+article{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height:350px ;
+    background-color: rgb(240, 236, 236);
+}
+article img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+article p{
+    font-size: 20px;
+}
+.tempDegree{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.left-span{
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+}
+.right-span{
+    color: rgb(38, 145, 245);
+    font-weight: bold;
+    font-size: 20px;
+}
+footer{
+    background-color: whitesmoke;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;/*when the viewport width is small*/
+    width: 80%;
+    position: fixed;
+    bottom: 0;
+    left: 10%;
+    border: solid 2px black;
+
+}
+#cookie{
+    width: 60px;
+}
+footer h1{
+    font-size: 25px;
+}
+#acceptCookies{
+    width: 70px;
+    min-height: 30px;
+    padding: 5px;
+    background-color: rgb(32, 167, 245);
+    border:solid 2px;
+    box-shadow: 2px 2px black;
+}
+

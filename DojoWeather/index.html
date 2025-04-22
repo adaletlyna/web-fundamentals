@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="pageHeader">
+        <h1>DojoWeather</h1>
+        <nav>
+            <ul>
+              <li><a href="#" onclick="dispalyAlert(this)">Burbank</a></li>
+              <li><a href="#"  onclick="dispalyAlert(this)">Chicago</a></li>
+              <li><a href="#"  onclick="dispalyAlert(this)">Dallas</a></li>
+            </ul>
+          </nav>
+    </header>
+    <main>
+        
+            <header class="mainHeader">
+                <h2> San Jose</h2>
+                <div class="tempUnitSelector">
+                    <label for="tempUnit">show temperature in </label>
+                    <select name="SelectUnit" id="selectUnit" onchange="convert()">
+                        <option value="C">°C</option>
+                        <option value="F">°F</option>
+                    </select>
+    
+                </div>
+            </header>
+            <div class="flexContainer">
+                <article class="today-weather">
+                    <h2>Today</h2>
+                    <img src="assets\some_rain.png" alt="rainy cloud">
+                    <p>some rain</p>
+                    <div class="tempDegree"><span class="left-span" > <span id="left-span1">24</span>°</span><span class="right-span"><span id="right-span1">18</span> °</span></div>
+                </article>
+                <article class="tomorrow-weather">
+                    <h2>Tomorrow</h2>
+                    <img src="assets\some_sun.png" alt="sun">
+                    <p>some sun</p>
+                    <div class="tempDegree"><span class="left-span" > <span id="left-span2">27</span>°</span><span class="right-span" > <span id="right-span2">19</span>°</span></div>
+                </article>
+                <article class="friday-weather">
+                    <h2>Friday</h2>
+                    <img src="assets\some_clouds.png" alt="cloud">
+                    <p>some clouds</p>
+                    <div class="tempDegree"><span class="left-span" ><span  id="left-span3">21</span>°</span><span class="right-span" ><span id="right-span3">16</span>°</span></div>
+                </article>
+                <article class="saturday-weather">
+                    <h2>Saturday</h2>
+                    <img src="assets\some_sun.png" alt="sun">
+                    <p>some sun</p>
+                    <div class="tempDegree"><span class="left-span"><span id="left-span4">26</span>°</span><span class="right-span" > <span id="right-span4">21</span>°</span></div>
+                </article>
+            </div>
+            
+            
+        
+    </main>
+    
+    <footer class="cookies">
+        <img src="assets\cookie.png" alt="cookie" id="cookie">
+        <div>
+            <h1>Stop! Cookies time</h1>
+            <p>We use cookies (sadly not the edible ones) jnjnvj mldor jdjre ,vos osr jhdurase hdguea hdgfhh jfkgig emekig. <a href="#">Read more..</a></p>
+        </div>
+        <button id="acceptCookies" onclick="acceptCookies()">I Accept</button>
+        
+    </footer>
+ 
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
